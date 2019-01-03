@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Show Guide Demo</string>
+    <string name="login_url">https://deepgandhi.000webhostapp.com/movie_guide_login.php</string>
+    <string name="tv_trending_url">https://api.themoviedb.org/3/trending/tv/week?api_key=</string>
+    <string name="api_key">725d9fcd70a52e52d951ffe672bd7f2d</string>
+    <string name="image_url">https://image.tmdb.org/t/p/w500</string>
+    <string name="details_url">https://api.themoviedb.org/3/tv/</string>
+    <string name="title_activity_home_screen_actvity">HomeScreenActvity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="popular_url">https://api.themoviedb.org/3/tv/popular?api_key=</string>
+    <string name="check_like_url">https://deepgandhi.000webhostapp.com/check_like.php?</string>
+    <string name="insert_like_url">https://deepgandhi.000webhostapp.com/insert_like.php?</string>
+    <string name="delete_like_url">https://deepgandhi.000webhostapp.com/delete_like.php?</string>
+    <string name="more_details_url">https://api.themoviedb.org/3/tv/</string>
+    <string name="similar_url">https://api.themoviedb.org/3/tv/</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="register_url">http://deepgandhi.000webhostapp.com/movie_guide_signup.php?email=</string>
+    <string name="image_upload">http://deepgandhi.000webhostapp.com/movie_guide_image.php</string>
+    <string name="change_url">http://deepgandhi.000webhostapp.com/movie_guide_change.php?change=</string>
+</resources>

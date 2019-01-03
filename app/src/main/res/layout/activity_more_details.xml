@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoreDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/darkTextColor"
+            android:id="@+id/moredetails_toolbar">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/more_creator"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp"
+                android:text="created by"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_creator"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/textcolor"
+                android:id="@+id/more_runtime"
+                android:textSize="18sp"
+                android:text="runtime"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp"
+                android:layout_below="@id/more_runtime"
+                android:layout_marginTop="15dp"
+                android:id="@+id/more_genre"
+                android:text="genre"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp"
+                android:layout_below="@id/more_genre"
+                android:layout_marginTop="15dp"
+                android:id="@+id/more_networks"
+                android:text="networks"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp"
+                android:layout_below="@id/more_networks"
+                android:layout_marginTop="15dp"
+                android:id="@+id/more_episode"
+                android:text="no of episodes"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp"
+                android:layout_below="@id/more_episode"
+                android:layout_marginTop="15dp"
+                android:id="@+id/more_seasons"
+                android:text="no of seasons"/>
+
+
+            <iammert.com.expandablelib.ExpandableLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/more_seasons"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/more_expandable"
+                app:parentLayout="@layout/layout_parent"
+                app:childLayout="@layout/layout_child">
+
+            </iammert.com.expandablelib.ExpandableLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

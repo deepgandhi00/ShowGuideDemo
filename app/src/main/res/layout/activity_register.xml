@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#292929"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="WELCOME TO SHOWGUIDE"
+            android:textSize="28sp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:text="LEARN MORE"
+                android:id="@+id/register_leran_more"
+                android:textColor="#fff"
+                android:background="@drawable/button_blue" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="JOIN THE CLUB"
+                android:layout_weight="1.4"
+                android:id="@+id/register_join_club"
+                android:background="@drawable/button_trasparent"
+                android:textColor="#6200ee"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <EditText
+            android:id="@+id/reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="USERNAME"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:layout_marginLeft="35dp"
+            android:inputType="text"
+            android:layout_marginRight="35dp"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#ff00"
+            android:visibility="gone"
+            android:id="@+id/reg_usernamecheck"/>
+
+        <EditText
+            android:id="@+id/reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="EMAIL"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:layout_marginLeft="35dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginRight="35dp"
+            android:drawablePadding="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#ff00"
+            android:visibility="gone"
+            android:id="@+id/reg_emailcheck"/>
+
+        <EditText
+            android:id="@+id/reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:layout_marginLeft="35dp"
+            android:inputType="textPassword"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="15dp"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#ff00"
+        android:visibility="gone"
+        android:id="@+id/reg_pwdchk"/>
+
+        <EditText
+            android:id="@+id/reg_confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CONFIRM PASSWORD"
+            android:layout_marginLeft="35dp"
+            android:inputType="textPassword"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#ff00"
+            android:visibility="gone"
+            android:id="@+id/reg_pwdcheck"/>
+
+        <Button
+            android:id="@+id/reg_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/button_blue"
+            android:layout_marginTop="15dp"
+            android:text="SIGN UP"
+            android:textColor="#fff"
+            android:layout_marginRight="35dp"
+            android:onClick="signupclick"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/reg_googlesignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/signin_round"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+</LinearLayout>

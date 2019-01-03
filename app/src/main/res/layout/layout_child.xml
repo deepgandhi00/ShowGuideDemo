@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:textSize="15sp"
+            android:text="Season No"
+            android:id="@+id/child_no"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/child_no"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textcolor"
+            android:textSize="15sp"
+            android:text="Season name"
+            android:id="@+id/child_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:layout_below="@id/child_name"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="No of Episodes"
+            android:id="@+id/child_episode"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Air Date"
+            android:textSize="15sp"
+            android:textColor="@color/textcolor"
+            android:layout_below="@id/child_episode"
+            android:layout_marginTop="5dp"
+            android:id="@+id/child_air"/>
+
+</LinearLayout>
